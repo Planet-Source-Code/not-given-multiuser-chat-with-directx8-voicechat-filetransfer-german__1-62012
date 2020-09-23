@@ -1,0 +1,75 @@
+VBMessenger 9 Client
+--------------------
+--------------------
+
+
+ Verbindung
+ ----------
+
+
+	Chat
+
+	- Verbindung über VBMessenger9 Server
+
+	- lokaler Port = variabel
+	- remote  Port = 91
+	- TCP
+
+	
+	VoiceChat
+	
+	- DirectX 8 oder höher benötigt
+	- Verbindung über VBMessenger9 Server
+
+	- lokaler Port = variabel
+	- remote  Port = 9897
+	- TCP
+
+
+	FileTransfer
+
+	- P2P - Verbindung von Client zu Client
+
+	- Wenn Server
+
+		- lokaler Port = 18252
+		- remote Port  = variabel
+		- TCP
+	
+	- Wenn Client
+
+		- lokaler Port = variabel
+		- remote Port  = 18252
+		- TCP
+
+	-> Für den Filetransfer muss mindestens ein Client
+	kurzfristig als Server agieren (Port 18252 bei Routern
+	forwarden!)
+
+
+
+ Administrator-Befehle
+ ---------------------
+
+
+	Durch Eingabe von "\\" können folgende Befehle an den Server übermittelt werden
+
+		- kick 
+		-> kicked den markierten Benutzer aus dem Chat und evt. VoiceChat
+
+		- ban
+		-> banned den Benutzer für 5 min vom Server und VoiceChat
+
+		- makeadmin
+		-> macht andere Benutzer zu Administratoren (gilt solange, wie der Client mit dem Server verbunden ist)
+
+		- giveupadmin
+		-> legt eigene Administrator-Rechte ab (gilt solange, wie der Client mit dem Server verbunden ist)
+	
+		- loginadmin
+		-> macht den Benutzer zum Admin, wenn dieser feste Adminrechte auf dem Server hat
+
+		- kickvoice
+		-> kicked den Benutzer aus dem VoiceChat
+
+
